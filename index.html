@@ -2,32 +2,44 @@
 <html lang="pt-br">
 
 <head>
+
+    <!-- Servidores de Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portfólio Fernanda Murched, desenvolvedora Web FullStack em formação.">
     <meta name="author" content="Fernanda Murched">
     <meta name="keywords" content=" Portfólio, desenvolvedora, web, fullstack, Fernanda Murched, HTML, CSS, JavaScript">
     <link rel="icon" href="./assets/img/favicon.svg" />
+
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
     <title>Portfólio de Fernanda Murched</title>
 </head>
 
 <body>
 
     <!-- Cabeçalho da página -->
-    <header>
+    <header class="flex menu_container">
 
-        <div id="header_content">
+        <div id="header_content" class="menu_content">
             <!-- Título do cabeçalho-->
-            <div id="titulo">
+            <div id="titulo" class="sucess_titulo"> 
                 <a href="#">Universo</a>
             </div>
 
             <!-- Menu -->
-            <div id="menu">
+            <div id="menu" class="flex menu_list">
 
                 <!-- Barra de navegação -->
                 <nav>
-                    <ul>
+                    <ul class="flex">
                         <li><a href="#"> Home </a></li>
                         <li><a href="#about"> Sobre </a></li>
                         <li><a href="#contact"> Contatos </a></li>
@@ -41,86 +53,97 @@
     <main>
 
         <!-- Seção home -->
-        <section id="home">
-            <article id="home_texto">
-
-                <h4>Bem-vindo ao Novo Universo</h4>
+        <section id="home" class="flex home_container">
+            
+            <!-- Texto home -->
+            <article id="home_texto" class="flex home_content">
+                <h3>Bem-vindo ao Novo Universo</h3>
                 <h1>Mundos diferentes para pessoas diferentes</h1>
                 <p>Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar
                     sua vidis. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Quem manda na minha terra sou
                     euzis! Casamentiss faiz malandris se pirulitá. </p>
-                <a href="https://github.com/FernandaMurched" target="_blank"> Explorar </a>
+                <a href="https://github.com/FernandaMurched" target="_blank" class="botao"> Explorar </a>
             </article>
 
-            <article id="home_imagem">
+            <!-- Imagem da seção Home -->
+            <article id="home_imagem" class="flex home_content">
                 <img src="./assets/img/astronauta.svg" alt="Capacete de um astronauta com animação." />
             </article>
         </section>
 
-        <!-- Seção sobre -->
-        <section id="about">
+        <!-- Seção Sobre -->
+        <section id="about" class="flex sobre_container">
 
-            <img src="./assets/img/user_02.svg" alt="Imagem de perfil do GitHub." />
+            <!-- Imagem da seção Sobre -->
+            <img src="./assets/img/user_02.svg" alt="Imagem de perfil do GitHub." class="about_img" />
 
-            </article id="about_texto">
-            <h1> Sobre mim </h1>
-            <p> Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua
-                vidis. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Quem manda na minha terra sou euzis!
-                Casamentiss faiz malandris se pirulitá. </p>
+             <!-- Texto da seção Sobre -->
+            <div id="about_texto" class="about_content">
+                <h2> Sobre mim </h2>
+                <h3>
+                    Mussum Ipsum, cacilds vidis litro abertis.  Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Nulla id gravida magna, ut semper sapien. A ordem dos tratores não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.
+                    Negão é teu passadis, eu sou faxa pretis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Bota 1 metro de cachacis aí pra viagem!
+                <h3>
 
-            <div id="about_github">
-                <a href="https://github.com/FernandaMurched" target="_blank"> Explorar </a>
-                <p> 4 seguidores </p>
-                <p> 21 repositórios </p>
-            </div>
-            </article>
-
+            <!-- Botão GiHub -->
+                <div id="about_github" class="flex sobre_github">
+                    <a href="https://github.com/FernandaMurched" target="_blank" class="botao"> GitHub </a>
+                    <p> 11 seguidores </p>
+                    <p> 21 repositórios </p>
+                </div>
         </section>
 
         <!-- Seção de contatos -->
-        <section id="contact">
-            <h4> Entre em contato</h4>
-            <p> Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua
-                vidis. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Quem manda na minha terra sou euzis!
-                Casamentiss faiz malandris se pirulitá. </p>
+        <section id="contact" class="contato_container">
+            
+        <article id="redes_sociais" class="contato_content">
+            <h4>Contate-me</h4>
+                <p>
+                Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Mais vale
+                um bebadis conhecidiss, que um alcoolatra anonimis. Aenean aliquam molestie leo, vitae iaculis
+                nisl. A ordem dos tratores não altera o pão duris.
+                </p>
 
-            <div id="icones_redes_sociais">
-                <a href="" target="_blank">
-                    <img src="assets/img/linkedin.svg" alt="Ícone do LinkedIn" />
+        <!-- Redes Sociais -->
+            <div id="icones_redes_sociais" class="social_container">
+                <a href="" target="_blank" class="social_icon">
+                <img src="./assets/img/linkedin.svg" alt="Ícone do LinkedIn" />
                 </a>
-
-                <a href="" target="_blank">
-                    <img src="assets/img/github.svg" alt="Ícone do GitHub" />
+                <a href="" target="_blank" class="social_icon">
+                <img src="./assets/img/github.svg" alt="Ícone do GitHub" />
                 </a>
             </div>
+        </article>
 
-            <form action="" method="POST">
-                <label for="nome">Nome:</label>
-                <input id="nome" id="nome" type="text" placeholder="Digite o seu nome">
-                <span id="txtNome"></span>
+                <!-- Formulário de contato -->
+                <form action="" method="POST">
+                        <label for="nome">Nome</label>
+                        <input id="nome" name="nome" type="text" placeholder="Digite o seu nome">
+                        <span id="txtNome"></span>
 
-                <label for="email">E-mail: </label>
-                <input id="email" id="email" type="text" placeholder="Digite um endereço de e-mail válido">
-                <span id="txtEmail"></span>
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="text" placeholder="Digite su e-mail">
+                        <span id="txtEmail"></span>
 
-                <label for="assunto">Assunto: </label>
-                <input id="assunto" id="assunto" type="text" placeholder="Digite o assunto">
+                        <label for="assunto">Assunto</label>
+                        <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto">
+                        <span id="txtAssunto"></span>
 
-                <span id="txtAssunto"></span>
+                        <label for="mensagem">Mensagem</label>
 
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem">
+                        </textarea>
 
-                <button type="submit">Enviar</button>
-
-            </form>
+                        <button class="botao" type="submit">Enviar mensagem</button>
+                </form>
         </section>
     </main>
 
-    <!-- Rodapé da página -->
-    <footer>
-        👩‍💻 Feito por Fernanda Murched - 2025.
-    </footer>
+        <!-- Rodapé da página -->
+        <footer>
+            <p>&copy; 2025 Fernanda | Todos os direitos reservados.</p>
+            </div>
+        </footer>
 </body>
 
 </html>
