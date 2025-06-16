@@ -1,3 +1,23 @@
+function createStars(){
+  const container = document.body;
+
+  for(let i = 0; i < 500; i++){  // 1000 pode deixar lento
+    const star = document.createElement("div");
+    star.className = "star";
+
+    const size = Math.random() * 1.5 + 0.5; // tamanhos entre 0.5px e 2px
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+
+    star.style.top = `${Math.random() * 100}vh`;
+    star.style.left = `${Math.random() * 100}vw`;
+
+    container.appendChild(star);
+  }
+}
+
+createStars();
+
 const sobre = document.querySelector("#about");
 
 const formulario = document.querySelector("#formulario");
@@ -22,17 +42,11 @@ async function getApiGithub() {
 
             <!-- Texto da seção Sobre -->
             <article id="about_texto">
-                <h2> Sobre mim </h2>
-                <h3>
-                    Eu sou a Fernanda Murched, desenvolvedora Full Stack Java em formação pela Generation Brasil. Também sou estudante de Análise e Desenvolvimento de Sistemas e Pedagogia. Ah, também estou no espectro autista!
-                    <br><br>
-                    Essa combinação única me trouxe até a tecnologia com um olhar criativo, empatia aguçada e o propósito claro de resolver problemas reais. Acredito no poder do código para transformar o mundo, e amo criar interfaces que sejam ao mesmo tempo acessíveis, funcionais e humanas.
-                    <br><br>
-                    Meu objetivo é desenvolver soluções que comuniquem, ensinem e incluam. Acredito que tecnologia só faz sentido se transformar a vida das pessoas.
-                    <br><br>
-                    Quer ver meu código na prática? Dá uma olhada no meu GitHub!
-                    <br><br>
-                </h3>
+                <h2> Fernanda Murched </h2>
+                <p>Minha jornada em tecnologia é impulsionada pela paixão em criar.<br> Em formação pela Generation Brasil, sou Desenvolvedora Full Stack Java e estudante de Análise de Sistemas e Pedagogia.</p> 
+                <p>Essa formação me permite desenvolver soluções que comuniquem e incluem, transformando ideias em código eficiente.</p> 
+                <p>Meu propósito é criar tecnologia que faça a diferença na vida das pessoas.</p> 
+                <p>Curioso(a) para ver meu trabalho? Mergulhe no meu GitHub e veja meu código em ação!</p>            
 
             <!-- Botão GiHub -->
                 <div id="about_github" class="flex sobre_github">
@@ -56,7 +70,7 @@ formulario.addEventListener("submit", function(event) {
   const campoNome = document.querySelector("#nome")
   const txtNome = document.querySelector("#txtNome")
 
-  if (campoNome.value.lenght < 3) {
+  if (campoNome.value.length < 3) {
     txtNome.innerHTML = "O nome deve ter no mínimo 3 caracteres!"
     campoNome.focus();
     return;
@@ -78,7 +92,7 @@ formulario.addEventListener("submit", function(event) {
   const campoAssunto = document.querySelector("#assunto")
   const txtAssunto = document.querySelector("#txtAssunto")
 
-  if (campoAssunto.value.match < 3) {
+  if (campoAssunto.value.length < 3) {
     txtAssunto.innerHTML = "O assunto deve ter no mínimo 3 caracteres!";
     campoAssunto.focus()
     return
@@ -92,3 +106,4 @@ formulario.addEventListener("submit", function(event) {
 })
 
 getApiGithub()
+

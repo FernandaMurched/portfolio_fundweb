@@ -5,7 +5,7 @@
   text-decoration: none;
   font-weight: 400;
   outline: none;
-  font-family: "Poppings", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* VARIÁVEIS CORES */
@@ -18,6 +18,12 @@
   --gray-400: #505861;
   --black-800: #171717;
   --white: #f9f9f9;
+  --snow: #FAFAFA;
+
+  /* Novos tons de Azul-Ciano */
+  --cyan-200: #7bc0d1; 
+  --cyan-500: #36bec8;
+  --cyan-700: #008c9e; 
 }
 
 html {
@@ -27,10 +33,27 @@ html {
 }
 
 body {
-  background-color: var(--gray-200);
-  color: var(--black-800);
+  background-color: black;
+  color: #f8f3f3;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smootingh: grayscale;
+}
+
+.star{
+
+  position: fixed;
+  background-color: rgb(141, 141, 141);
+  border-radius: 50%;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  box-shadow: 0 0 1px white;
+  animation: twinkle 7s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
 }
 
 button,a {
@@ -39,19 +62,19 @@ button,a {
 
 .botao {
   padding: 0.5rem 2rem;
-  border: 1px solid var(--purple-800);
+  border: 1px solid var(--cyan-700);
   border-radius: 0.75rem;
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
-  color: var(--purple-800);
+  color: var(--cyan-700);
   background-color: none;
   transition: all ease-in 0.2s;
 }
 
 .botao:hover {
-  color: var(--white);
-  background-color: var(--purple-800);
+  color: var(--cyan-200);
+  background-color: transparent;
 }
 
 .flex {
@@ -63,23 +86,24 @@ button,a {
 /* HEADER */
 
 .menu_container {
-  position: sticky;
+  position:static;
   top: 0;
   width: 100%;
   height: 5rem;
-  background-color: var(--purple-800);
-  border-bottom: 1px solid var(--purple-500);
+  background-color: none;
+  /*border-bottom: 1px solid var(--cyan-500);*/
   filter: opacity(0.9);
   z-index: 1000;
 }
 
 .menu_container a {
-  font-weight: 700;
-  color: var(--white);
+  font-weight: 600;
+  color: var(--snow);
+  font-size: 1.50rem;
 }
 
 .menu_container a:hover {
-  color: var(--purple-200);
+  color: var(--cyan-700);
 }
 
 .menu_content {
@@ -101,7 +125,7 @@ button,a {
 }
 
 .menu_list li {
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 
 .menu_list a {
@@ -127,22 +151,25 @@ button,a {
 
 .home_container p,
 h1,
-h4 {
+h3 {
   text-align: center;
+   color: var(--snow);
+  
 }
 
 .home_container h1 {
   font-size: 3rem;
-  font-weight: 700;
-  line-height: 3rem;
+  font-weight: 800;
+  line-height: 4rem; 
 }
 
 .home_container h3 {
-  font-weight: 600;
+  margin: 1rem 0;
+  font-weight: 500;
 }
 
 .home_container p {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   font-size: 1.40rem;
   text-align: center;
 }
@@ -167,16 +194,21 @@ h4 {
 
 .sobre_container {
     max-width: 1120px;
-    margin: -1.25rem auto;
-    padding: 0 1rem;
-    height: 100vh;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    min-height: 80vh;
 }
 
 .sobre_container img {
-    width: 30%;
-    margin: 1rem;
-    border: 5px solid var(--purple-500);
+    width: 35%;
+    margin: 0;
+    border: 2px solid var(--cyan-700);
     border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .sobre_container h2 {
@@ -184,21 +216,27 @@ h4 {
     font-weight: bold;
     line-height: 3rem;
     text-align: center;
+    color: var(--snow);
+    
 }
 
-.sobre_container h3 {
-    margin: 1rem 0;
+.sobre_container p {
+    margin: 1.10rem 0;
+    font-size: 1rem;
     font-weight: 500;
-    text-align: justify;
+    text-align: left;
+    color: var(--snow);
+    line-height: 1.6;
 }
 
 .sobre_github {
     justify-content: space-evenly;
+    color: var(--snow);
 }
 
 #sobre_texto {
-  flex: 1;
-  margin-left: 2rem;
+  margin-left: 1rem;
+  width: 60%;
 }
 
 /* Contato */
@@ -210,23 +248,28 @@ h4 {
     max-width: 1120px;
     margin: 4rem auto 2rem;
     padding: 0 2rem;
-}
+ }
 
 .contato_container h4{
     margin: 1rem 0;
     font-size: 2rem;
     font-weight: 700;
+    color: var(--gray-200);
+    text-align: center;
 }
 
 .contato_content{
     flex-direction: column;
     margin: 4rem 0 0 0;
     font-size: 1.25rem;
+    color: var(--gray-200);
 }
 
 .contato_content p{
     display: block;
-    text-align: justify;
+    text-align: left;
+    color: var(--gray-200);
+    font-size: 1.25rem;
 }
 
 .social_container{
@@ -240,30 +283,38 @@ h4 {
     height: 4.75rem;
 }
 
-.social_icon:hover{
-    filter: brightness(0)
-            saturate(100%)
-            invert(20%)
-            sepia(24%)
-            saturate(4557%)
-            hue-rotate(242deg)
-            brightness(89%)
-            contrast(108%)
+.social_icon:hover{color: var(--cyan-200);
+    filter: saturate(100%)
+            invert(39%)
+            sepia(94%)
+            saturate(460%)
+            hue-rotate(150deg)
+            brightness(93%)
+            contrast(100%)
+    opacity(65%)
+            
 }
+.social_icon {
+  filter: invert(100%) brightness(200%);
+  
+}
+
 
 /* Formulário */
 
 form{
     display: flex;
     flex-direction: column;
-    margin: 7rem 0 0 0;
+    margin: 4rem 0 0 0;
     padding: 1.25rem;
+    
 }
 
 form label{
-    font-size: 1.25rem;
+    font-size: 1.10rem;
     font-weight: bold;
     text-align: left;
+    color: var(--gray-200);
 }
 
 form input,
@@ -272,12 +323,15 @@ form textarea{
     margin: 0.5rem 0 1rem;
     padding: 0.6rem;
     border-radius: 1.25rem;
-    border: none;
-    font-size: 1rem;
+    border:none;
+    font-size: 1.20rem;
+    
 }
 
 textarea{
     resize: none;
+    font-weight: 400;
+    
 }
 
 form span{
@@ -294,8 +348,8 @@ footer {
     padding: 2rem;
     font-weight: bold;
     text-align: center;
-    color: var(--white);
-    background-color: var(--purple-500);
+    color: var(--snow);
+    /*background-color: var(--cyan-500);*/
     filter: opacity(0.9);
 }
 
@@ -317,29 +371,37 @@ footer {
 }
 
 #home_sucess h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 900;
+  margin: 2rem auto;
+  color: transparent;
+  -webkit-text-stroke: 0.9px var(--cyan-500); /* contorno amarelo */
+  text-shadow: 2px 2px 8px #000;
 }
 
 #home_sucess p {
-  font-size: 1.25rem;
+  font-size: 1.40rem;
   margin-bottom: 2rem;
   max-width: 600px;
+  text-align: center;
+  color: var(--snow);
 }
 
 #home_sucess .botao {
   text-decoration: none;
   padding: 0.75rem 2rem;
   border-radius: 2rem;
-  background-color: var(--purple-500);
-  color: #fff;
+  background-color: transparent;
+  color: var(--gray-200);
   font-weight: 600;
   transition: background-color 0.3s;
 }
 
 #home_sucess .botao:hover {
-  background-color: (--purple-500);
+  background-color: var(--cyan-700);
+
 }
 
 /* Animação */
@@ -380,25 +442,26 @@ footer {
     margin: -1.25rem auto;
     padding: 0 1rem;
     height: 100vh;
+    gap: 2.5rem;
 }
 
 .sobre_container img {
-    width: 30%;
-    margin: 2rem;
-    border: 5px solid var(--purple-500);
-    border-radius: 50%;
+    width: 35%;
+    margin: 0rem;
+    border: 5px solid var(--black);
+    border-radius: 20%;
 }
 
 .sobre_container h2 {
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-weight: bold;
-    line-height: 3rem;
-    text-align: center;
+    line-height: 4rem;
 }
 
 .sobre_container p {
-    margin: rem 0;
-    text-align: center;
+    margin: 0.5rem 0;
+    font-size: 1.10rem;
+    text-align: left;
 }
 
 .sobre_github {
@@ -406,7 +469,9 @@ footer {
 }
 
 #sobre_texto {
-    margin-left: 2rem;
+    margin-left: 0rem;
+    width: 100%;
+    padding: 0 1rem;
 }
 
 /* Responsividade Mobile */
@@ -416,6 +481,10 @@ footer {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+    }
+
+    .menu_container a {
+        font-size: 0.8rem; /*Ajuste do menu para mobile*/
     }
 
     main{
@@ -450,10 +519,11 @@ footer {
         height: auto;
         margin: 1rem auto;
         padding: 2rem 1rem;
+        gap: 2rem;
     }
 
     .sobre_container img{
-        width: 50%;
+        width: 35%;
         margin-bottom: 1rem;
     }
 
