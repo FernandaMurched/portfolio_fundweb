@@ -43,8 +43,9 @@ async function getApiGithub() {
             <!-- Texto da seção Sobre -->
             <article id="about_texto">
                 <h2> Fernanda Murched </h2>
-                <p>Minha jornada em tecnologia é impulsionada pela paixão em criar.<br> Em formação pela Generation Brasil, sou Desenvolvedora Full Stack Java e estudante de Análise de Sistemas e Pedagogia.</p> 
-                <p>Essa formação me permite desenvolver soluções que comuniquem e incluem, transformando ideias em código eficiente.</p> 
+                <p>Minha jornada em tecnologia é impulsionada pela paixão em criar.</p> 
+                <p>Em formação pela Generation Brasil, sou Desenvolvedora Full Stack Java e estudante de Análise de Sistemas e Pedagogia.</p> 
+                <p>Essa formação me permite desenvolver soluções que comunicam e incluam, transformando ideias em código eficiente.</p> 
                 <p>Meu propósito é criar tecnologia que faça a diferença na vida das pessoas.</p> 
                 <p>Curioso(a) para ver meu trabalho? Mergulhe no meu GitHub e veja meu código em ação!</p>            
 
@@ -63,6 +64,7 @@ async function getApiGithub() {
     console.error(error)
   }
 }
+
 
 formulario.addEventListener("submit", function(event) {
   event.preventDefault()
