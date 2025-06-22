@@ -44,6 +44,7 @@
                         <li><a href="#"> Home </a></li>
                         <li><a href="#about"> Sobre </a></li>
                         <li><a href="#contact"> Contatos </a></li>
+                        <li><a href="#projects"> Projetos </a></li>
                     </ul>
                 </nav>
             </div>
@@ -55,10 +56,10 @@
 
         <!-- Seção home -->
         <section id="home" class="flex home_container">
-            
+
             <!-- Texto home -->
             <article id="home_texto" class="flex home_content">
-                
+
                 <h1>
                     Construindo Soluções Impactantes<br> para um Futuro Inclusivo
                 </h1>
@@ -77,66 +78,139 @@
         <!-- Seção Sobre -->
         <section id="about" class="flex sobre_container">
 
-            
         </section>
+
+        <!--Seção Projetos-->
+        <section id="projects" class="projects_container">
+            <h2>Projetos em Destaque</h2>
+            <div class="projects_grid">
+                <!-- Projeto Farmácia -->
+                <div class="project_card glassy-card">
+                    <h3>Farmácia API</h3>
+                    <p>E-commerce de gestão para produtos farmacêuticos. Inclui autenticação, CRUD e deploy no Render.</p>
+                    <div class="project_techs">
+                        <span class="badge badge-java">Java</span>
+                        <span class="badge badge-spring">Spring Boot</span>
+                        <span class="badge badge-spring-security">Spring Security</span>
+                        <span class="badge badge-jpa">JPA</span>
+                        <span class="badge badge-jwt">JWT</span>
+                        <span class="badge badge-junit">JUnit</span>
+                        <span class="badge badge-postgree">PostgreSQL</span>
+                        <span class="badge badge-render">Render</span>
+                    </div>
+                    <a href="https://github.com/FernandaMurched/projeto_final_bloco_02" class="botao" target="_blank">Ver no
+                        GitHub</a>
+                </div>
+
+                <!-- Projeto Blog Pessoal -->
+                <div class="project_card glassy-card">
+                    <h3>Blog Pessoal</h3>
+                    <p>Blog com autenticação JWT, CRUD completo, persistência JPA e deploy.</p>
+                    <div class="project_techs">
+                        <span class="badge badge-java">Java</span>
+                        <span class="badge badge-spring">Spring Boot</span>
+                        <span class="badge badge-spring-security">Spring Security</span>
+                        <span class="badge badge-jpa">JPA</span>
+                        <span class="badge badge-jwt">JWT</span>
+                        <span class="badge badge-junit">JUnit</span>
+                        <span class="badge badge-render">Render</span>
+                    </div>
+                    <a href="https://github.com/FernandaMurched/blogpessoal_spring" class="botao" target="_blank">Ver no
+                        GitHub</a>
+                </div>
+
+                <!-- Projeto Loja de Games -->
+                <div class="project_card glassy-card">
+                    <h3>Loja de Games</h3>
+                    <p>Plataforma para cadastrar, listar e comprar jogos, com gestão de categorias e usuários.</p>
+                    <div class="project_techs">
+                        <span class="badge badge-java">Java</span>
+                        <span class="badge badge-spring">Spring Boot</span>
+                        <span class="badge badge-spring-security">Spring Security</span>
+                        <span class="badge badge-jpa">JPA</span>
+                        <span class="badge badge-jwt">JWT</span>
+                        <span class="badge badge-mysql">MySQL</span>
+                    </div>
+                    <a href="https://github.com/FernandaMurched/loja_games_spring" class="botao" target="_blank">Ver no
+                        GitHub</a>
+                </div>
+
+                <!-- Projeto Conta Bancária -->
+                <div class="project_card glassy-card">
+                    <h3>Conta Bancária</h3>
+                    <p>API para gerenciamento de contas bancárias, operações de depósito, saque e extrato.</p>
+                    <div class="project_techs">
+                        <span class="badge badge-java">Java</span>
+                        <span class="badge badge-spring">Spring Boot</span>
+                        <span class="badge badge-poo">POO</span>
+                        <span class="badge badge-git">Git</span>
+                    </div>
+                    <a href="https://github.com/FernandaMurched/projeto_conta_bancaria" class="botao" target="_blank">Ver no
+                        GitHub</a>
+                </div>
+            </div>
+        </section>
+
+
 
         <!-- Seção de contatos -->
         <section id="contact" class="contato_container">
-            
-        <article id="redes_sociais" class="contato_content">
-            <h4>Contate-me</h4>
+
+            <article id="redes_sociais" class="contato_content">
+                <h4>Contate-me</h4>
                 <p>
-                Se você se interessou pelo meu trabalho, tem uma oportunidade ou conhecer um pouco mais sobre mim, tecnologia ou educação. <br> Será um prazer falar com você!
+                    Se você se interessou pelo meu trabalho, tem uma oportunidade ou conhecer um pouco mais sobre mim,
+                    tecnologia ou educação. Será um prazer falar com você!
                 </p>
 
-        <!-- Redes Sociais -->
-            <div id="icones_redes_sociais" class="social_container">
-                <a href="https://www.linkedin.com/in/fernandamurched/" target="_blank" class="social_icon">
-                <img src="./assets/img/linkedin.svg" alt="Ícone do LinkedIn" />
-                </a>
-                <a href="https://github.com/FernandaMurched?tab=repositories" target="_blank" class="social_icon">
-                <img src="./assets/img/github.svg" alt="Ícone do GitHub" />
-                </a>
-            </div>
-        </article>
+                <!-- Redes Sociais -->
+                <div id="icones_redes_sociais" class="social_container">
+                    <a href="https://www.linkedin.com/in/fernandamurched/" target="_blank" class="social_icon">
+                        <img src="./assets/img/linkedin.svg" alt="Ícone do LinkedIn" />
+                    </a>
+                    <a href="https://github.com/FernandaMurched?tab=repositories" target="_blank" class="social_icon">
+                        <img src="./assets/img/github.svg" alt="Ícone do GitHub" />
+                    </a>
+                </div>
+            </article>
 
-                <!-- Formulário de contato -->
-                <form action="https://formsubmit.co/8f0e88b53df0d3b5f02656f25b0ab921" method="POST" id="formulario" >
+            <!-- Formulário de contato -->
+            <form action="https://formsubmit.co/8f0e88b53df0d3b5f02656f25b0ab921" method="POST" id="formulario">
 
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
-                        <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
+                <input type="hidden" name="_captcha" value="false">
 
-                        <label for="nome">Nome</label>
-                        <input id="nome" name="nome" type="text" placeholder="Digite o seu nome">
-                        <span id="txtNome"></span>
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite o seu nome">
+                <span id="txtNome"></span>
 
-                        <label for="email">E-mail</label>
-                        <input id="email" name="email" type="text" placeholder="Digite seu e-mail">
-                        <span id="txtEmail"></span>
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="text" placeholder="Digite seu e-mail">
+                <span id="txtEmail"></span>
 
-                        <label for="assunto">Assunto</label>
-                        <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto">
-                        <span id="txtAssunto"></span>
+                <label for="assunto">Assunto</label>
+                <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto">
+                <span id="txtAssunto"></span>
 
-                        <label for="mensagem">Mensagem</label>
-                        
-                        <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+                <label for="mensagem">Mensagem</label>
 
-                        <button class="botao" type="submit">Enviar mensagem</button>
-                </form>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+                <button class="botao" type="submit">Enviar mensagem</button>
+            </form>
         </section>
     </main>
 
-        <!-- Rodapé da página -->
-        <footer>
-            <p>&copy; 2025 Fernanda | Todos os direitos reservados.</p>
-            </div>
-        </footer>
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2025 Fernanda | Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
-        <!-- Script JavaScript-->
+    <!-- Script JavaScript-->
 
-        <script src="./assets/js/script.js"></script>
-    
+    <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>
