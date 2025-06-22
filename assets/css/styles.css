@@ -295,7 +295,7 @@ h1 {
 
 /* Scrollbar estilizada para os cards */
 .projects_grid::-webkit-scrollbar {
-  height: 4px;
+  height: 8px;
 }
 
 .projects_grid::-webkit-scrollbar-thumb {
@@ -565,6 +565,19 @@ footer {
 
 #home_sucess .botao {
   animation-delay: 0.8s;
+}
+
+#topo {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  background: var(--cyan-700);
+  color: white;
+  border-radius: 20%;
+  padding: 0.5rem 0.8rem;
+  z-index: 1000;
 }
 
 /* Responsividade Mobile */
